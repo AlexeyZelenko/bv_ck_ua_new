@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Camera, Instagram, Facebook, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Heart, Instagram, Facebook, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
           {/* Логотип та опис */}
           <div className="space-y-4">
             <Link to="/" className="text-white font-bold text-2xl flex items-center">
-              <Camera className="mr-2 text-accent-500" />
-              <span>ФотоВідео</span>
+              <Heart className="mr-2 text-accent-500" />
+              <span>БлагаВість</span>
             </Link>
             <p className="text-gray-400 mt-4">
-              Ваші спогади заслуговують найкращої якості. Ми створюємо фото та відео, які розповідають вашу історію.
+              Ваші життя заслуговує найкращої якості. Ми створюємо атмосферу, яка змінює долі.
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 <Link to="/" className="text-gray-400 hover:text-accent-500 transition-colors">Головна</Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-accent-500 transition-colors">Послуги</Link>
+                <Link to="/services" className="text-gray-400 hover:text-accent-500 transition-colors">Служіння</Link>
               </li>
               <li>
                 <Link to="/portfolio" className="text-gray-400 hover:text-accent-500 transition-colors">Портфоліо</Link>
@@ -61,22 +61,22 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4 text-white">Наші служіння</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services#wedding" className="text-gray-400 hover:text-accent-500 transition-colors">Весільна фотозйомка</Link>
+                <Link to="/services#wedding" className="text-gray-400 hover:text-accent-500 transition-colors">Недільне служіння</Link>
               </li>
               <li>
-                <Link to="/services#event" className="text-gray-400 hover:text-accent-500 transition-colors">Відеозйомка заходів</Link>
+                <Link to="/services#event" className="text-gray-400 hover:text-accent-500 transition-colors">Молодіжні зустрічи</Link>
               </li>
               <li>
-                <Link to="/services#commercial" className="text-gray-400 hover:text-accent-500 transition-colors">Комерційна фотозйомка</Link>
+                <Link to="/services#commercial" className="text-gray-400 hover:text-accent-500 transition-colors">Молитовні зустрічи</Link>
               </li>
               <li>
-                <Link to="/services#aerial" className="text-gray-400 hover:text-accent-500 transition-colors">Аерозйомка дроном</Link>
+                <Link to="/services#aerial" className="text-gray-400 hover:text-accent-500 transition-colors">Недільна школа</Link>
               </li>
               <li>
-                <Link to="/services#portrait" className="text-gray-400 hover:text-accent-500 transition-colors">Портретна фотографія</Link>
+                <Link to="/services#portrait" className="text-gray-400 hover:text-accent-500 transition-colors">Підліткові зустрічи</Link>
               </li>
               <li>
-                <Link to="/services#retouching" className="text-gray-400 hover:text-accent-500 transition-colors">Ретуш фотографій</Link>
+                <Link to="/services#retouching" className="text-gray-400 hover:text-accent-500 transition-colors">Кормлення нужденних</Link>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="text-accent-500 mr-2 h-5 w-5 mt-0.5" />
-                <span className="text-gray-400">вул. Хрещатик 22, Київ, Україна</span>
+                <span className="text-gray-400">вул. Сінна 5, Черкаси, Україна</span>
               </li>
               <li className="flex items-center">
                 <Phone className="text-accent-500 mr-2 h-5 w-5" />
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          <p>&copy; {currentYear} ФотоВідео Студія. Всі права захищені.</p>
+          <p>&copy; {currentYear} БлагаВість. Всі права захищені.</p>
         </div>
       </div>
     </footer>

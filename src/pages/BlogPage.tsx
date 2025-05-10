@@ -40,7 +40,7 @@ const BlogPage: React.FC = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Наш блог</h1>
             <p className="text-xl text-gray-200">
-              Корисні статті, поради та новини зі світу фото та відео
+              Корисні статті, поради та новини
             </p>
           </motion.div>
         </div>
