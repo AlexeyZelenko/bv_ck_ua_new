@@ -135,7 +135,7 @@ const Hero: React.FC = () => {
           repeatDelay: 0.5
         }}
         onClick={scrollToContent}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white z-20 flex flex-col items-center"
+        className="absolute bottom-10 left-1/2 -ml-16 text-white z-20 flex flex-col items-center"
         aria-label="Прокрутити вниз"
       >
         <span className="text-sm mb-2">Прокрутити вниз</span>

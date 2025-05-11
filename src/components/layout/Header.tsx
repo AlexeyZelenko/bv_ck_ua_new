@@ -84,7 +84,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white focus:outline-none z-50"
+          className="md:hidden text-white focus:outline-none z-50 mr-5"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Закрити меню" : "Відкрити меню"}
         >

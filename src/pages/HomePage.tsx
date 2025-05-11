@@ -9,7 +9,7 @@ import ContactCTA from '../components/home/ContactCTA';
 
 const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Головна';
+    document.title = 'БлагаВість | Головна';
   }, []);
 
   return (
