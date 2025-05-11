@@ -7,7 +7,7 @@ import { services } from '../data';
 
 const ServicesPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Послуги';
+    document.title = 'БлагаВість | Послуги';
   }, []);
 
   return (

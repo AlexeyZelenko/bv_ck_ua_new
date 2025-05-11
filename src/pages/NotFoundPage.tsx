@@ -6,7 +6,7 @@ import Button from '../components/common/Button';
 
 const NotFoundPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Сторінка не знайдена';
+    document.title = 'БлагаВість | Сторінка не знайдена';
   }, []);
 
   return (

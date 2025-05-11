@@ -9,7 +9,7 @@ const BlogPage: React.FC = () => {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Блог';
+    document.title = 'БлагаВість | Блог';
   }, []);
 
   // Отримуємо унікальні теги з усіх постів
