@@ -206,7 +206,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Дмитро Воронков',
     role: 'Регіональний пастор',
     bio: 'Служитель церкви.',
-    imageUrlMobile: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/teamMembers%2FIMG_2447_mobile.webp?alt=media&token=ba5c21d1-a9f2-47e6-a0b8-31e9832ff6a9',
+    imageUrlMobile: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/teamMembers%2FIMG_2433_mobile.webp?alt=media&token=2950a318-e3ea-4244-b2df-b83fe23ed23c',
     imageUrlDesktop: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/teamMembers%2FIMG_2433.webp?alt=media&token=efedb677-f36b-4af5-abc2-d6b616df3341',
     socialLinks: {
       instagram: 'https://instagram.com',
