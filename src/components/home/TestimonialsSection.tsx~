@@ -80,8 +80,8 @@ const TestimonialsSection: React.FC = () => {
     <section className="py-20 bg-gray-900 text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <SectionTitle 
-          title="Відгуки"
-          subtitle="Ось що кажуть про нас"
+          title="Відгуки клієнтів" 
+          subtitle="Ось що кажуть наші клієнти про співпрацю з нами"
           centered
           light
         />

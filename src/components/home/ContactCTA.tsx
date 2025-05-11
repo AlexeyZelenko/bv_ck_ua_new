@@ -55,10 +55,10 @@ const ContactCTA: React.FC = () => {
               <div>
                 <h4 className="font-semibold text-lg">Email:</h4>
                 <a 
-                  href="mailto:info@fotovideo.ua" 
+                  href="mailto:partner@bv.ck.ua"
                   className="text-accent-600 hover:text-accent-800 transition-colors"
                 >
-                  info@fotovideo.ua
+                  partner@bv.ck.ua
                 </a>
               </div>
               

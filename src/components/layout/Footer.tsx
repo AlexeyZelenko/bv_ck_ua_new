@@ -19,13 +19,13 @@ const Footer: React.FC = () => {
               Ваші життя заслуговує найкращої якості. Ми створюємо атмосферу, яка змінює долі.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
+              <a href="https://www.instagram.com/bv.ck.ua/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
                 <Instagram />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
+              <a href="https://www.facebook.com/bv.ck.ua#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
                 <Facebook />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
+              <a href="https://www.youtube.com/channel/UCSb71yKJmS0eHyhRRl00ioQ" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-500 transition-colors">
                 <Youtube />
               </a>
             </div>
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="text-accent-500 mr-2 h-5 w-5" />
-                <a href="mailto:info@fotovideo.ua" className="text-gray-400 hover:text-accent-500 transition-colors">info@fotovideo.ua</a>
+                <a href="mailto:churchbvch@gmail.com" className="text-gray-400 hover:text-accent-500 transition-colors">churchbvch@gmail.com</a>
               </li>
             </ul>
           </div>

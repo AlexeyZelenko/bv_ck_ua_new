@@ -12,7 +12,7 @@ import { Project } from '../../types';
 const schema = z.object({
   title: z.string().min(1, 'Назва обов\'язкова'),
   description: z.string().min(1, 'Опис обов\'язковий'),
-  category: z.enum(['photo', 'video', 'combined'], {
+  category: z.enum(['service', 'young', 'children'], {
     required_error: 'Виберіть категорію',
   }),
   image: z.instanceof(FileList).refine((files) => files.length > 0, 'Зображення обов\'язкове'),
@@ -58,13 +58,13 @@ const AdminPortfolioPage: React.FC = () => {
       const file = data.image[0];
       const storageRef = ref(storage, `portfolio/${file.name}`);
       const snapshot = await uploadBytes(storageRef, file);
-      const imageUrl = await getDownloadURL(snapshot.ref);
+      const imageUrlDesktop = await getDownloadURL(snapshot.ref);
 
       await addDoc(collection(db, 'projects'), {
         title: data.title,
         description: data.description,
         category: data.category,
-        imageUrl,
+        imageUrlDesktop,
         date: new Date().toISOString().split('T')[0],
       });
 
@@ -136,9 +136,9 @@ const AdminPortfolioPage: React.FC = () => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent-500 focus:ring-accent-500"
             >
               <option value="">Виберіть категорію</option>
-              <option value="photo">Фотографія</option>
-              <option value="video">Відео</option>
-              <option value="combined">Комбіновані</option>
+              <option value="service">Служіння</option>
+              <option value="yuong">Молодь</option>
+              <option value="children">Діти</option>
             </select>
             {errors.category && (
               <p className="mt-1 text-sm text-red-600">{errors.category.message}</p>
@@ -207,7 +207,7 @@ const AdminPortfolioPage: React.FC = () => {
               >
                 <div className="aspect-[4/3] relative">
                   <img
-                    src={project.imageUrl}
+                    src={project.imageUrlDesktop}
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
-import ContactForm from '../components/contact/ContactForm';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -10,44 +9,39 @@ const ContactPage: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <section className="pt-32 pb-20 bg-gradient-to-r from-primary-800 to-secondary-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold mb-6"
-          >
-            Зв'яжіться з нами
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl mx-auto text-xl text-gray-200"
-          >
-            Маєте запитання? Заповніть форму або зв'яжіться з нами за допомогою вказаних контактів.
-          </motion.p>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
-              <ContactForm />
-            </div>
-            
-            <div className="space-y-8">
-              <motion.div 
+      <>
+        <section className="pt-32 pb-20 bg-gradient-to-r from-primary-800 to-secondary-800 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white rounded-lg shadow-xl p-8"
+                transition={{ duration: 0.5 }}
+                className="text-4xl md:text-5xl font-bold mb-6"
+            >
+              Зв'яжіться з нами
+            </motion.h1>
+            <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="max-w-3xl mx-auto text-xl text-gray-200"
+            >
+              Виникли запитання? Скористайтеся наведеною нижче контактною інформацією або нашими соціальними мережами.
+            </motion.p>
+          </div>
+        </section>
+
+        <section className="py-20 bg-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="space-y-8">
+              <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="bg-white rounded-lg shadow-xl p-8"
               >
                 <h3 className="text-2xl font-bold mb-6 text-gray-900">Контактна інформація</h3>
-                
+
                 <ul className="space-y-6">
                   <li className="flex">
                     <MapPin className="text-accent-500 mr-4 h-6 w-6 flex-shrink-0" />
@@ -60,7 +54,7 @@ const ContactPage: React.FC = () => {
                       </address>
                     </div>
                   </li>
-                  
+
                   <li className="flex">
                     <Phone className="text-accent-500 mr-4 h-6 w-6 flex-shrink-0" />
                     <div>
@@ -70,17 +64,17 @@ const ContactPage: React.FC = () => {
                       </a>
                     </div>
                   </li>
-                  
+
                   <li className="flex">
                     <Mail className="text-accent-500 mr-4 h-6 w-6 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Email:</h4>
-                      <a href="mailto:info@fotovideo.ua" className="text-gray-600 hover:text-accent-600 transition-colors">
-                        info@fotovideo.ua
+                      <a href="mailto:churchbvch@gmail.com" className="text-gray-600 hover:text-accent-600 transition-colors">
+                        churchbvch@gmail.com
                       </a>
                     </div>
                   </li>
-                  
+
                   <li className="flex">
                     <Clock className="text-accent-500 mr-4 h-6 w-6 flex-shrink-0" />
                     <div>
@@ -94,46 +88,46 @@ const ContactPage: React.FC = () => {
                   </li>
                 </ul>
               </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-white rounded-lg shadow-xl p-8"
+
+              <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  className="bg-white rounded-lg shadow-xl p-8"
               >
                 <h3 className="text-2xl font-bold mb-6 text-gray-900">Соціальні мережі</h3>
-                
+
                 <ul className="space-y-4">
                   <li>
-                    <a 
-                      href="https://instagram.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
+                    <a
+                        href="https://www.instagram.com/bv.ck.ua/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
                     >
                       <Instagram className="mr-4 h-6 w-6" />
-                      <span>@fotovideo.studio</span>
+                      <span>@bv.ck.ua</span>
                     </a>
                   </li>
-                  
+
                   <li>
-                    <a 
-                      href="https://facebook.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
+                    <a
+                        href="https://www.facebook.com/bv.ck.ua#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
                     >
                       <Facebook className="mr-4 h-6 w-6" />
                       <span>БлагаВість Церква</span>
                     </a>
                   </li>
-                  
+
                   <li>
-                    <a 
-                      href="https://youtube.com" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
+                    <a
+                        href="https://www.youtube.com/channel/UCSb71yKJmS0eHyhRRl00ioQ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
                     >
                       <Youtube className="mr-4 h-6 w-6" />
                       <span>БлагаВість Церква</span>
@@ -143,31 +137,30 @@ const ContactPage: React.FC = () => {
               </motion.div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Де нас знайти" 
-            subtitle="Ми знаходимося в на площі 700-річчя Черкас"
-            centered
-          />
-          
-          <div className="h-96 rounded-lg overflow-hidden shadow-xl">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4894320718003!2d30.5197656!3d50.447723299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LI!5e0!3m2!1sru!2sua!4v1634897440418!5m2!1sru!2sua" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy"
-              title="Карта розташування церкви"
-            ></iframe>
+        <section className="py-20 bg-white m-auto">
+          <div className="container mx-auto px-4">
+            <SectionTitle
+                title="Де нас знайти"
+                subtitle="Ми знаходимося в на площі 700-річчя Черкас"
+                centered
+            />
+
+            <div className="h-96 rounded-lg overflow-hidden shadow-xl">
+              <iframe
+                  width="100%"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2595.4405292888096!2d32.10316!3d49.419485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9101cca08af2968c!2z0KbQtdGA0LrQvtCy0Ywg0JHQu9Cw0LPQsNGPINCS0LXRgdGC0Ywg0KfQtdGA0LrQsNGB0YHRiw!5e0!3m2!1suk!2sus!4v1603789520347!5m2!1suk!2sus"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="Карта розташування церкви"
+              ></iframe>
+            </div>
           </div>
-        </div>
-      </section>
-    </>
+        </section>
+      </>
   );
 };
 
