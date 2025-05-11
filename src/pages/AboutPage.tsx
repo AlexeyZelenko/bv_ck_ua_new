@@ -6,7 +6,7 @@ import { teamMembers } from '../data';
 
 const AboutPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Про нас';
+    document.title = 'БлагаВість Церква | Про нас';
   }, []);
 
   const stats = [
@@ -139,11 +139,14 @@ const AboutPage: React.FC = () => {
                 className="text-center"
               >
                 <div className="mb-4 relative overflow-hidden rounded-lg aspect-[3/4]">
-                  <img 
-                    src={member.imageUrl} 
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
+                  <picture>
+                    <source media="(max-width: 768px)" srcSet={member.imageUrlMobile}/>
+                    <img
+                        src={member.imageUrlDesktop}
+                        alt={member.name}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </picture>
                 </div>
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                 <p className="text-accent-500 mb-2">{member.role}</p>

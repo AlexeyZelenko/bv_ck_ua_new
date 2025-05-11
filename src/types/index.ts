@@ -2,8 +2,10 @@ export interface Project {
   id: string;
   title: string;
   description: string;
-  imageUrl: string;
-  category: 'photo' | 'video' | 'combined';
+  imageUrlDesktop?: string;
+  imageUrlMobile?: string;
+  imageUrl?: string;
+  category: 'service' | 'children' | 'young';
   date: string;
   featured?: boolean;
   fullDescription?: string;
@@ -27,7 +29,8 @@ export interface TeamMember {
   name: string;
   role: string;
   bio: string;
-  imageUrl: string;
+  imageUrlDesktop: string;
+  imageUrlMobile: string;
   socialLinks?: {
     instagram?: string;
     facebook?: string;

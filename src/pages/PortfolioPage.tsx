@@ -6,13 +6,13 @@ import { projects as mockProjects } from '../data';
 import { Project } from '../types';
 
 const PortfolioPage: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'photo' | 'video' | 'combined'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'service' | 'young' | 'children'>('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Портфоліо';
+    document.title = 'БлагаВість | Портфоліо';
     fetchProjects();
   }, []);
 
@@ -60,7 +60,7 @@ const PortfolioPage: React.FC = () => {
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-12">
               <div className="flex flex-wrap justify-center gap-2">
-                {['all', 'photo', 'video', 'combined'].map((category) => (
+                {['all', 'service', 'young', 'children'].map((category) => (
                     <button
                         key={category}
                         onClick={() => setActiveCategory(category as any)}
@@ -70,10 +70,10 @@ const PortfolioPage: React.FC = () => {
                                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                     >
-                      {category === 'all' && 'Всі роботи'}
-                      {category === 'photo' && 'Фотографія'}
-                      {category === 'video' && 'Відео'}
-                      {category === 'combined' && 'Комбіновані'}
+                      {category === 'all' && 'Все'}
+                      {category === 'service' && 'Служіння'}
+                      {category === 'young' && 'Молодіжні'}
+                      {category === 'children' && 'Діти'}
                     </button>
                 ))}
               </div>
@@ -95,19 +95,22 @@ const PortfolioPage: React.FC = () => {
                           onClick={() => setSelectedProject(project)}
                           className="cursor-pointer group relative aspect-[4/3] rounded-lg overflow-hidden"
                       >
-                        <img
-                            src={project.imageUrl}
-                            alt={project.title}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                        <picture>
+                          <source media="(max-width: 768px)" srcSet={project.imageUrlMobile}/>
+                          <img
+                              src={project.imageUrlDesktop}
+                              alt={project.title}
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                        </picture>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                           <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
                           <p className="text-gray-200 mb-2">{project.description}</p>
                           <div className="flex items-center">
                       <span className="text-accent-400 text-sm mr-2">
-                        {project.category === 'photo' && 'Фотографія'}
-                        {project.category === 'video' && 'Відео'}
-                        {project.category === 'combined' && 'Комбіновані'}
+                        {project.category === 'service' && 'Cлужіння'}
+                        {project.category === 'young' && 'Молодіжні'}
+                        {project.category === 'children' && 'Діти'}
                       </span>
                             <span className="text-sm text-gray-300">{project.date}</span>
                           </div>

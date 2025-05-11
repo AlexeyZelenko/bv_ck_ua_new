@@ -6,7 +6,7 @@ import ContactForm from '../components/contact/ContactForm';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ФотоВідео Студія | Контакти';
+    document.title = 'БлагаВість Церква | Контакти';
   }, []);
 
   return (
@@ -54,8 +54,8 @@ const ContactPage: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900">Адреса:</h4>
                       <address className="not-italic text-gray-600">
-                        вул. Хрещатик 22<br />
-                        Київ, 01001<br />
+                        вул. Сінна, 5<br />
+                        Черкаси, 18000<br />
                         Україна
                       </address>
                     </div>
@@ -124,7 +124,7 @@ const ContactPage: React.FC = () => {
                       className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
                     >
                       <Facebook className="mr-4 h-6 w-6" />
-                      <span>ФотоВідео Студія</span>
+                      <span>БлагаВість Церква</span>
                     </a>
                   </li>
                   
@@ -136,7 +136,7 @@ const ContactPage: React.FC = () => {
                       className="flex items-center text-gray-600 hover:text-accent-600 transition-colors"
                     >
                       <Youtube className="mr-4 h-6 w-6" />
-                      <span>ФотоВідео Студія</span>
+                      <span>БлагаВість Церква</span>
                     </a>
                   </li>
                 </ul>
@@ -150,7 +150,7 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Де нас знайти" 
-            subtitle="Ми знаходимося в центрі Києва, поруч з метро Хрещатик"
+            subtitle="Ми знаходимося в на площі 700-річчя Черкас"
             centered
           />
           
@@ -162,7 +162,7 @@ const ContactPage: React.FC = () => {
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy"
-              title="Карта розташування студії"
+              title="Карта розташування церкви"
             ></iframe>
           </div>
         </div>

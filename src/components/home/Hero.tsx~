@@ -20,7 +20,7 @@ const slides = [
   },
   {
     id: 3,
-    imageMobile: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/home%2FIMG_7382_mobile.webp?alt=media&token=39fa6d96-62d4-4ef5-89fc-9dade2d2bb9b',
+    imageMobile: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/home%2FIMG_7382.webp?alt=media&token=47adb685-f8b8-41e1-a512-793605f20525',
     imageDesktop: 'https://firebasestorage.googleapis.com/v0/b/nusk-9e136.appspot.com/o/home%2FIMG_7382.webp?alt=media&token=47adb685-f8b8-41e1-a512-793605f20525',
     title: 'Знайди свій шлях і силу в Божій любові щодня',
     subtitle: 'Його любов – невичерпне джерело підтримки у кожній ситуації',
