@@ -149,7 +149,7 @@ const PortfolioPage: React.FC = () => {
 
                     <div className="aspect-video w-full">
                       <img
-                          src={selectedProject.imageUrl}
+                          src={selectedProject.imageUrlDesktop}
                           alt={selectedProject.title}
                           className="w-full h-full object-cover"
                       />
@@ -158,9 +158,9 @@ const PortfolioPage: React.FC = () => {
                     <div className="p-6">
                       <div className="flex items-center mb-4">
                     <span className="bg-accent-500 text-white text-sm py-1 px-3 rounded-full mr-2">
-                      {selectedProject.category === 'photo' && 'Фотографія'}
-                      {selectedProject.category === 'video' && 'Відео'}
-                      {selectedProject.category === 'combined' && 'Комбіновані'}
+                      {selectedProject.category === 'service' && 'Служіння'}
+                      {selectedProject.category === 'young' && 'Молодіжні'}
+                      {selectedProject.category === 'children' && 'Діти'}
                     </span>
                         <span className="text-gray-500">{selectedProject.date}</span>
                       </div>
